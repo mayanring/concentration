@@ -9,6 +9,11 @@ class ViewController: UIViewController {
 
     @IBOutlet var cardButtons: [UIButton]!
     
+    @IBAction func touchResetButton(_ sender: UIButton) {
+        game.reset()
+        updateViewFromModel()
+    }
+    
     var emojiChoices = ["🎃", "👻", "🧟‍♀️", "🧛🏻‍♂️", "👽", "🧟‍♂️", "🦇", "🍫"]
     
     @IBAction func touchCard(_ sender: UIButton) {

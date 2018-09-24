@@ -35,6 +35,14 @@ class Concentration {
         }
     }
     
+    func reset() {
+        for index in cards.indices {
+            cards[index].reset()
+        }
+        
+        // TODO: reset score
+    }
+    
     init(numberOfPairsOfCards: Int) {
         for _ in 0..<numberOfPairsOfCards {
             let card = Card()
