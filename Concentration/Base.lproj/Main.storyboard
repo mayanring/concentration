@@ -140,12 +140,20 @@
                                     <action selector="touchResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kF-1V-umc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="868-wD-l8U">
+                                <rect key="frame" x="65" y="567" width="254" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="moveCountLabel" destination="CV2-bz-MMl" id="gxL-xH-CZO"/>
+                        <outlet property="scoreLabel" destination="868-wD-l8U" id="Y0B-vn-yvR"/>
                         <outletCollection property="cardButtons" destination="Q2u-Le-Kw6" collectionClass="NSMutableArray" id="2nP-Rg-789"/>
                         <outletCollection property="cardButtons" destination="7Pb-ys-tk0" collectionClass="NSMutableArray" id="xUw-nM-UTU"/>
                         <outletCollection property="cardButtons" destination="FH4-LQ-jYB" collectionClass="NSMutableArray" id="pjL-SJ-xNs"/>
